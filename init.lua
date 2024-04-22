@@ -234,7 +234,12 @@ require('lazy').setup({
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
   -- keys can be used to configure plugin behavior/loading/etc.
-  'tpope/vim-fugitive',
+  {
+    'tpope/vim-fugitive',
+    config = function()
+      vim.opt.diffopt:append 'context:10000'
+    end,
+  },
 
   -- Use `opts = {}` to force a plugin to be loaded.
   --

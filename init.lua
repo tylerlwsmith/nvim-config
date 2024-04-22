@@ -237,7 +237,11 @@ require('lazy').setup({
   {
     'tpope/vim-fugitive',
     config = function()
+      -- Add more context to diffs.
       vim.opt.diffopt:append 'context:10000'
+
+      -- Add line wrapping on diffs.
+      vim.opt.diffopt:append 'followwrap'
     end,
   },
 

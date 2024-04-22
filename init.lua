@@ -154,6 +154,12 @@ vim.opt.cursorline = true
 -- Show ruler at column 80
 vim.opt.colorcolumn = '80'
 
+-- Set tab width from default of 8 spaces to 4 spaces.
+-- To learn more about tab settings, watch the Vimcasts video below.
+-- http://vimcasts.org/episodes/tabs-and-spaces/
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 

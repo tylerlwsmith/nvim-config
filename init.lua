@@ -632,6 +632,13 @@ require('lazy').setup({
             },
           },
         },
+        gopls = {},
+        tsserver = {},
+        tailwindcss = {},
+        emmet_language_server = {},
+        prettierd = {},
+        pylsp = {},
+        templ = {},
       }
 
       -- Ensure the servers and tools above are installed

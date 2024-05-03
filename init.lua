@@ -379,6 +379,7 @@ require('lazy').setup({
 
       -- [[ Configure Telescope ]]
       -- See `:help telescope` and `:help telescope.setup()`
+      local actions = require 'telescope.actions'
       local live_grep_args_actions = require 'telescope-live-grep-args.actions'
       require('telescope').setup {
         -- You can put your default mappings / updates / etc. in here
@@ -389,7 +390,18 @@ require('lazy').setup({
         --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
         --   },
         -- },
-        -- pickers = {}
+        pickers = {
+          buffers = {
+            mappings = {
+              i = {
+                -- Delete open buffer. Key combination was chosen because it
+                -- was still available.
+                -- https://github.com/nvim-telescope/telescope.nvim/wiki/Configuration-Recipes#mapping-c-d-to-delete-buffer
+                ['<C-k>'] = actions.delete_buffer + actions.move_to_top,
+              },
+            },
+          },
+        },
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),

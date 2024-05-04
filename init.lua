@@ -251,6 +251,20 @@ require('lazy').setup({
     end,
   },
 
+  {
+    'HiPhish/rainbow-delimiters.nvim',
+    config = function()
+      require('rainbow-delimiters.setup').setup {
+        query = {
+          [''] = 'rainbow-delimiters',
+          javascript = 'rainbow-parens',
+          typescript = 'rainbow-parens',
+          tsx = 'rainbow-parens',
+        },
+      }
+    end,
+  },
+
   -- Use `opts = {}` to force a plugin to be loaded.
   --
   --  This is equivalent to:

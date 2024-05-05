@@ -234,6 +234,29 @@ vim.opt.rtp:prepend(lazypath)
 --
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
+  -- For consideration:
+  -- ## Closing tags
+  -- https://github.com/tpope/vim-endwise
+  -- https://github.com/rstacruz/vim-closer
+  -- https://github.com/windwp/nvim-ts-autotag -- Treesitter autoclose & autorename html tags
+  -- https://github.com/dmmulroy/ts-error-translator.nvim
+  --
+  -- ## Quality of life
+  -- https://github.com/nvim-pack/nvim-spectre - Multifile search/replace
+  -- https://github.com/mattn/emmet-vimo
+  -- https://github.com/wfxr/minimap.vim
+  -- 'tpope/vim-surround', -- Add, change and delete surrounding elements, but mini.nvim's surround does the same.
+  --
+  -- ## Waiting on EVERYTHING below this line until I get better at Vim.
+  -- https://github.com/tpope/vim-repeat
+  -- https://github.com/ap/vim-css-color
+  -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-move.md
+  -- https://github.com/mbbill/undotree
+  -- https://github.com/laytan/cloak.nvim
+  --
+  -- Also, look at the recommended treesitter plugins later in the doc.
+  -- Specifically, look at treesitter text objects.
+
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 

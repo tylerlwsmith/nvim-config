@@ -287,6 +287,7 @@ require('lazy').setup({
       }
     end,
   },
+  { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 
   -- Use `opts = {}` to force a plugin to be loaded.
   --

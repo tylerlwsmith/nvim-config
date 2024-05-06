@@ -274,20 +274,6 @@ require('lazy').setup({
     end,
   },
 
-  {
-    'HiPhish/rainbow-delimiters.nvim',
-    config = function()
-      require('rainbow-delimiters.setup').setup {
-        query = {
-          [''] = 'rainbow-delimiters',
-          javascript = 'rainbow-parens',
-          typescript = 'rainbow-parens',
-          tsx = 'rainbow-parens',
-        },
-      }
-    end,
-  },
-
   -- Use `opts = {}` to force a plugin to be loaded.
   --
   --  This is equivalent to:
@@ -999,6 +985,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
+  require 'kickstart.plugins.rainbow-delimiters',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`

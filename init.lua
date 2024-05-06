@@ -287,7 +287,6 @@ require('lazy').setup({
       }
     end,
   },
-  { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 
   -- Use `opts = {}` to force a plugin to be loaded.
   --
@@ -996,7 +995,7 @@ require('lazy').setup({
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
+  require 'kickstart.plugins.indent-blankline',
   -- require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
